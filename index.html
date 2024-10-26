@@ -4,34 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rabbit Speaks| Acesso & Registro</title>
-    <!-- BOXICONS -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- STYLE -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Contenedor de Formularios -->
     <div class="form-container">
         <div class="col col-1">
-            <img src="img/contorno-blanco.png" class="form-image-main">
-            <img src="img/puntos.png" >
-            <img src="img/" >
-            <img src="" >
-            <img src="" >
-            
+            <div class="capa-imagen">
+                <img src="img/contorno-blanco.png" class="form-image-main">
+                <img src="img/puntos.png" class="form-image puntos">
+                <img src="img/pieza.png" class="form-image pieza">
+                <img src="img/resorte.png" class="form-image resorte">
+                <img src="img/conejo.png" class="form-image conejo">
+                <img src="img/nube.png" class="form-image nube">
+                <img src="img/estrellas.png" class="form-image estrellas">
+            </div>
+            <p class="palabras-destacadas">Pequeña introducción acerca de nuestra <span>página web</span></p>
         </div>
         <div class="col col-2">
+            <div class="btn-box">
+                <button class="btn btn-1">Iniciar Sesión</button>
+                <button class="btn btn-2">Registrarse</button>
+            </div>
+            <!-- Contenedor Login -->
+            <div class="is-form">
+                <div class="form-titulo">
+                    <span>Iniciar Sesión</span>
+                </div>
+                <div class="form-inputs">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Usuario" required>
+                        <i class="bx bx-user icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" placeholder="Contraseña" required>
+                        <i class="bx bx-lock-alt icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <button class="input-submit">
+                            <span>Iniciar Sesión</span>
+                            <i class="bx bx-right-arrow-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
+              <!-- Contenedor Registro -->
+              <div class="rg-form">
+                <div class="form-titulo">
+                    <span>Regístrate</span>
+                </div>
+                <div class="form-inputs">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Email" required>
+                        <i class="bx bx-envelope icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Usuario" required>
+                        <i class="bx bx-user icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" class="input-field" placeholder="Contraseña" required>
+                        <i class="bx bx-lock-alt icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <button class="input-submit">
+                            <span>Regístrate</span>
+                            <i class="bx bx-right-arrow-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
  
-            <!-- Contenedor Login -->
-           
-            <!-- Contenedor Registro -->
-            
-    
-
-    <!-- JS -->
     <script src="js/main.js"></script>
 </body>
 </html>
