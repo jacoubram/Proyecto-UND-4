@@ -32,6 +32,7 @@ body{
     border: 3px solid rgb(255, 255, 255, 0.3);
     border-radius: 30px;
     backdrop-filter: blur(20px);
+    overflow: hidden;
    
 }
 
@@ -54,6 +55,7 @@ body{
 
 .form-image-main{
     width: 400px;
+    animation: scale-up 3s ease-in-out alternate infinite;
 }
 
 .form-image{
@@ -63,6 +65,63 @@ body{
 }
 
 /* ====== Form Image Animation ===== */
+
+.puntos{
+    bottom: 40px;
+    animation: scale-up 3s ease-in-out alternate infinite;
+}
+.pieza{
+    top: 30px;
+    left: 50px;
+    animation: scale-down 3s ease-in-out alternate infinite;
+}
+.resorte{
+    right: 780px;
+    animation: scale-down 3s ease-in-out alternate infinite;
+
+}
+.conejo{
+    width: 320px;
+    height: 320px;
+    left: 45px;
+    bottom: 50px;
+    animation: scale-up 3s ease-in-out alternate infinite;
+}
+
+.nube{
+    bottom: 70px;
+    left: 60px;
+    animation: left-right 3s ease-in-out alternate infinite;
+
+}
+.estrellas{
+    bottom: 40px;
+    animation:  scale-down 3s ease-in-out alternate infinite;
+}
+
+@keyframes left-righ {
+    to{
+        transform: translateX(10px);
+    }
+}
+
+@keyframes up-down {
+    to{
+        transform: translateY(10px);
+    }
+}
+
+@keyframes scale-down {
+    to{
+        transform: scale(0.95);  
+    }
+}
+
+@keyframes scale-up {
+    to{
+        transform: scale(1.05);
+    }
+}
 
 /* ====== Featured Words ===== */
 .palabras-destacadas{
@@ -81,6 +140,7 @@ body{
     position: relative;
     width: 45%;
     padding: 20px;
+    overflow: hidden;
 }
 
 .btn-box{
@@ -103,6 +163,10 @@ body{
 
 .btn-1{
     background: #000000;
+}
+
+.btn-2{
+    background: rgb(49, 23, 119);
 }
 .btn:hover{
     opacity: 0.85;
@@ -202,6 +266,11 @@ body{
     gap:15px;
 }
 
-
-
 /* ======== Responsive ======== */
+
+/*@media (max-width: 892px){
+    .form-container{
+        width: 400px;
+    }
+}
+*/
